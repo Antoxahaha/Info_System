@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище SaitDbModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameFirm" Type="nchar" MaxLength="100" />
+    <Property Name="NameModel" Type="nchar" MaxLength="100" />
+    <Property Name="VonderCode" Type="nchar" MaxLength="10" />
+    <Property Name="Count" Type="int" />
+    <Property Name="InStock" Type="nchar" MaxLength="10" />
+    <Property Name="Price" Type="nchar" MaxLength="10" />
+    <Property Name="YoarTelephone" Type="nchar" MaxLength="20" />
+    <Property Name="Time" Type="nchar" MaxLength="50" />
+    <Property Name="Sales" Type="nchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="Sait">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameFirm" Type="nchar" MaxLength="100" />
+    <Property Name="NameModel" Type="nchar" MaxLength="100" />
+    <Property Name="VonderCode" Type="nchar" MaxLength="10" />
+    <Property Name="Count" Type="int" />
+    <Property Name="InStock" Type="nchar" MaxLength="10" />
+    <Property Name="DMY" Type="nchar" MaxLength="10" />
+    <Property Name="Price" Type="nchar" MaxLength="10" />
+    <Property Name="Description" Type="nchar" MaxLength="900" />
+    <Property Name="Сharacteristic" Type="nchar" MaxLength="900" />
+    <Property Name="ImageName" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="Хранилище SaitDbModelContainer">
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sait" EntityType="Self.Sait" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

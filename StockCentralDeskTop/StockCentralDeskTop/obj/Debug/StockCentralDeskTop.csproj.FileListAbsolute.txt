@@ -1,0 +1,15 @@
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.csprojAssemblyReference.cache
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.Form1.resources
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.Properties.Resources.resources
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.csproj.GenerateResource.cache
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.csproj.CoreCompileInputs.cache
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\bin\Debug\StockCentralDeskTop.exe.config
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\bin\Debug\StockCentralDeskTop.exe
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\bin\Debug\StockCentralDeskTop.pdb
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.exe
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.pdb
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.AddForm.resources
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.ChangePhone.resources
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.FormAdAddress.resources
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.SendForm.resources
+D:\Учеба\6 Семестр\Практика\StockCentralDeskTop\StockCentralDeskTop\obj\Debug\StockCentralDeskTop.csproj.ResolveComReference.cache

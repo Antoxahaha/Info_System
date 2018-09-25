@@ -1,0 +1,13 @@
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\bin\ServiceCentralStock.dll.config
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\bin\ServiceCentralStock.dll
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\bin\ServiceCentralStock.pdb
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\obj\Debug\ServiceCentralStock.csprojAssemblyReference.cache
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\obj\Debug\ServiceCentralStock.csproj.CoreCompileInputs.cache
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\obj\Debug\ServiceCentralStock.dll
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\obj\Debug\ServiceCentralStock.pdb
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\bin\EntityFramework.dll
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\bin\EntityFramework.SqlServer.dll
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\bin\EntityFramework.xml
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\bin\EntityFramework.SqlServer.xml
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\bin\ru\EntityFramework.resources.dll
+D:\Учеба\6 Семестр\Практика\ServiceCentralStock\ServiceCentralStock\obj\Debug\ServiceCentralStock.csproj.CopyComplete

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DBComingUpModelContainer" CdmEntityContainer="DBComingUpEntities">
+    <EntitySetMapping Name="AdressesShops">
+      <EntityTypeMapping TypeName="DBComingUpModel.AdressesShops">
+        <MappingFragment StoreEntitySet="AdressesShops">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Shirota" ColumnName="Shirota" />
+          <ScalarProperty Name="Dolgota" ColumnName="Dolgota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommingUp">
+      <EntityTypeMapping TypeName="DBComingUpModel.CommingUp">
+        <MappingFragment StoreEntitySet="CommingUp">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameFirm" ColumnName="NameFirm" />
+          <ScalarProperty Name="NameModel" ColumnName="NameModel" />
+          <ScalarProperty Name="VonderCode" ColumnName="VonderCode" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="InStock" ColumnName="InStock" />
+          <ScalarProperty Name="DMY" ColumnName="DMY" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sending">
+      <EntityTypeMapping TypeName="DBComingUpModel.Sending">
+        <MappingFragment StoreEntitySet="Sending">
+          <ScalarProperty Name="TimeOfSend" ColumnName="TimeOfSend" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Dolgota" ColumnName="Dolgota" />
+          <ScalarProperty Name="Shirota" ColumnName="Shirota" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameFirm" ColumnName="NameFirm" />
+          <ScalarProperty Name="NameModel" ColumnName="NameModel" />
+          <ScalarProperty Name="VonderCode" ColumnName="VonderCode" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

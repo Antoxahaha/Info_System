@@ -1,0 +1,80 @@
+﻿@model SaitShop.Models.Orders
+@{
+    ViewBag.Title = "Заказ";
+}
+
+<h1 style=" color:#ff00dc">PhoneShop</h1>
+<h2>@ViewBag.firm </h2>
+<h2>@ViewBag.model </h2>
+ 
+
+@using (Html.BeginForm())
+{
+
+<fieldset>
+    <div>
+        <table>
+            <tr>
+                <td rowspan="4"><img src="~/Images/@ViewBag.Image" /></td>
+                <td valign="middle"> Артикул: @ViewBag.c</td>
+            </tr>
+            <tr>
+                <td valign="middle">@ViewBag.des</td>
+            </tr>
+            <tr></tr>
+        </table>
+    </div>
+    <div class="editor-field">
+        Характеристики:
+        <br>
+        @ViewBag.xar
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.NameFirm, new { @Value = @ViewBag.firm })
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.NameModel, new { @Value = @ViewBag.model })
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.VonderCode, new { @Value = @ViewBag.c })
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.InStock, new { @Value = @ViewBag.stock })
+    </div>
+    <div class="editor-label">
+        Цена:
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Price, new { @Value = @ViewBag.price })
+    </div>
+    <div class="editor-label">
+        Количество:
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Count)
+    </div>
+    <div class="editor-label">
+        Дата заказа:
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Time, new { @Value = @ViewBag.date_order })
+    </div>
+    <div class="editor-label">
+        Ваш номер телефона
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.YoarTelephone)
+    </div>
+
+    <p>
+        <input type="submit" value="Заказать и вернуться назад" />
+    </p>
+</fieldset>
+}
+
+<div>
+    @Html.ActionLink("Вернуться назад без заказа", "Select_Phones")
+</div>
+
+
+

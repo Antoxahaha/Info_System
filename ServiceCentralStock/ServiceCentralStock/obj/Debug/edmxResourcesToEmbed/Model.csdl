@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBComingUpModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdressesShops">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Adress" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="Shirota" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Dolgota" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CommingUp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameFirm" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="NameModel" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="VonderCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="InStock" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DMY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Price" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Sending">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameFirm" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="NameModel" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="VonderCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="Shirota" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Dolgota" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TimeOfSend" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DBComingUpEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdressesShops" EntityType="Self.AdressesShops" />
+    <EntitySet Name="CommingUp" EntityType="Self.CommingUp" />
+    <EntitySet Name="Sending" EntityType="Self.Sending" />
+  </EntityContainer>
+</Schema>

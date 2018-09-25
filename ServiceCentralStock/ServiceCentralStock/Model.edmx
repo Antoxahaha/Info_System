@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище DBComingUpModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AdressesShops">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adress" Type="nchar" MaxLength="100" />
+          <Property Name="Shirota" Type="nchar" MaxLength="50" />
+          <Property Name="Dolgota" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CommingUp">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameFirm" Type="nchar" MaxLength="100" />
+          <Property Name="NameModel" Type="nchar" MaxLength="100" />
+          <Property Name="VonderCode" Type="nchar" MaxLength="10" />
+          <Property Name="Count" Type="int" />
+          <Property Name="InStock" Type="nchar" MaxLength="10" />
+          <Property Name="DMY" Type="nchar" MaxLength="10" />
+          <Property Name="Price" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Sending">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameFirm" Type="nchar" MaxLength="100" />
+          <Property Name="NameModel" Type="nchar" MaxLength="100" />
+          <Property Name="VonderCode" Type="nchar" MaxLength="10" />
+          <Property Name="Count" Type="int" />
+          <Property Name="Address" Type="nchar" MaxLength="100" />
+          <Property Name="Shirota" Type="nchar" MaxLength="50" />
+          <Property Name="Dolgota" Type="nchar" MaxLength="50" />
+          <Property Name="Status" Type="nchar" MaxLength="10" />
+          <Property Name="TimeOfSend" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityContainer Name="Хранилище DBComingUpModelContainer">
+          <EntitySet Name="AdressesShops" EntityType="Self.AdressesShops" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CommingUp" EntityType="Self.CommingUp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sending" EntityType="Self.Sending" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBComingUpModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AdressesShops">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Adress" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Shirota" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Dolgota" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CommingUp">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="NameFirm" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="NameModel" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="VonderCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Count" Type="Int32" />
+          <Property Name="InStock" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="DMY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Price" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Sending">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="NameFirm" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="NameModel" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="VonderCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Count" Type="Int32" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Shirota" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Dolgota" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="TimeOfSend" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DBComingUpEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdressesShops" EntityType="Self.AdressesShops" />
+          <EntitySet Name="CommingUp" EntityType="Self.CommingUp" />
+          <EntitySet Name="Sending" EntityType="Self.Sending" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище DBComingUpModelContainer" CdmEntityContainer="DBComingUpEntities">
+          <EntitySetMapping Name="AdressesShops">
+            <EntityTypeMapping TypeName="DBComingUpModel.AdressesShops">
+              <MappingFragment StoreEntitySet="AdressesShops">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adress" ColumnName="Adress" />
+                <ScalarProperty Name="Shirota" ColumnName="Shirota" />
+                <ScalarProperty Name="Dolgota" ColumnName="Dolgota" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CommingUp">
+            <EntityTypeMapping TypeName="DBComingUpModel.CommingUp">
+              <MappingFragment StoreEntitySet="CommingUp">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="NameFirm" ColumnName="NameFirm" />
+                <ScalarProperty Name="NameModel" ColumnName="NameModel" />
+                <ScalarProperty Name="VonderCode" ColumnName="VonderCode" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="InStock" ColumnName="InStock" />
+                <ScalarProperty Name="DMY" ColumnName="DMY" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sending">
+            <EntityTypeMapping TypeName="DBComingUpModel.Sending">
+              <MappingFragment StoreEntitySet="Sending">
+                <ScalarProperty Name="TimeOfSend" ColumnName="TimeOfSend" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Dolgota" ColumnName="Dolgota" />
+                <ScalarProperty Name="Shirota" ColumnName="Shirota" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="NameFirm" ColumnName="NameFirm" />
+                <ScalarProperty Name="NameModel" ColumnName="NameModel" />
+                <ScalarProperty Name="VonderCode" ColumnName="VonderCode" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище DBComingUpModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdressesShops">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adress" Type="nchar" MaxLength="100" />
+    <Property Name="Shirota" Type="nchar" MaxLength="50" />
+    <Property Name="Dolgota" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CommingUp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameFirm" Type="nchar" MaxLength="100" />
+    <Property Name="NameModel" Type="nchar" MaxLength="100" />
+    <Property Name="VonderCode" Type="nchar" MaxLength="10" />
+    <Property Name="Count" Type="int" />
+    <Property Name="InStock" Type="nchar" MaxLength="10" />
+    <Property Name="DMY" Type="nchar" MaxLength="10" />
+    <Property Name="Price" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Sending">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameFirm" Type="nchar" MaxLength="100" />
+    <Property Name="NameModel" Type="nchar" MaxLength="100" />
+    <Property Name="VonderCode" Type="nchar" MaxLength="10" />
+    <Property Name="Count" Type="int" />
+    <Property Name="Address" Type="nchar" MaxLength="100" />
+    <Property Name="Shirota" Type="nchar" MaxLength="50" />
+    <Property Name="Dolgota" Type="nchar" MaxLength="50" />
+    <Property Name="Status" Type="nchar" MaxLength="10" />
+    <Property Name="TimeOfSend" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="Хранилище DBComingUpModelContainer">
+    <EntitySet Name="AdressesShops" EntityType="Self.AdressesShops" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CommingUp" EntityType="Self.CommingUp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sending" EntityType="Self.Sending" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

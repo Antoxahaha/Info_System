@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SaitDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Sait">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameFirm" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="NameModel" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="VonderCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="InStock" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DMY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Price" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="900" FixedLength="true" Unicode="true" />
+    <Property Name="Сharacteristic" Type="String" MaxLength="900" FixedLength="true" Unicode="true" />
+    <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="SaitDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sait" EntityType="Self.Sait" />
+    <EntitySet Name="Orders" EntityType="SaitDbModel.Orders" />
+  </EntityContainer>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameFirm" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="NameModel" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="VonderCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="InStock" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Price" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YoarTelephone" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Sales" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
+  </EntityType>
+</Schema>

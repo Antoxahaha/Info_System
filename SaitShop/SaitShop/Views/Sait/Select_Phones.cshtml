@@ -1,0 +1,50 @@
+﻿@model IEnumerable<SaitShop.Models.Sait>
+@{
+    ViewBag.Title = "Каталог";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style=" color:#ff00dc">PhoneShop</h1>
+<h2 style=" color:#ff00dc">Перечень мобильных телефонов, которые вы можете заказать </h2>
+<div>
+    <table align="center">
+        <tr>
+            <td align="center"></td>
+            <td align="center">              
+            </td>       
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="/Images/@item.ImageName">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NameFirm)
+                    <br>
+                    @Html.DisplayFor(modelItem => item.NameModel)
+                    <br>
+                    Количество в наличии: @Html.DisplayFor(modelItem => item.Count)
+                    <br>
+                    В наличии в магазине: @Html.DisplayFor(modelItem => item.InStock)
+                    <br>
+                    @Html.DisplayFor(modelItem => item.Price)
+                    <br>
+                    <a style="background:#00ff21"  class="order-button" href="@Href("~/Sait/Create_Order", item.Id)">Заказать</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
